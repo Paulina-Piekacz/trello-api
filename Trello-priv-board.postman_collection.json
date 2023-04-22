@@ -37,6 +37,65 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get a Card",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/1/cards/6408d249039048dd57506950?key={{key}}&token={{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"1",
+								"cards",
+								"6408d249039048dd57506950"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cards on a Board",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/1/boards/GR4WWRQg/cards?key={{key}}&token={{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"1",
+								"boards",
+								"GR4WWRQg",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -176,6 +235,35 @@
 								{
 									"key": "token",
 									"value": "ATTA1428dbdd2f0c91754563b1722a630b7ff45a334f85ab7602d15c26bf67948eb09E781F94"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Card",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/1/cards/6408d249039048dd57506950?key={{key}}&token={{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"1",
+								"cards",
+								"6408d249039048dd57506950"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
 								}
 							]
 						}
